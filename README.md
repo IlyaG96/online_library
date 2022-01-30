@@ -41,21 +41,6 @@ pip install -r requirements.txt
 <summary>Да все просто, открывай скорее!</summary>
 
 - Сайт берет данные из онлайн-библиотеки [tululu.org](http://tululu.org/b9/)
-- Сами же обложки, тексты книг и json достает специальный скрипт, репозиторий с ним откроется в соседней вкладке, если нажать [сюда](https://github.com/IlyaG96/parser_online_library)
-</details>
-
-
-<details>
-<summary>Если файл находится в другом месте</summary>
-
-Если json-файл лежит в другой папке, то передайте параметр `-p`
-```shell
-python manage.py add_students -p some_folder/managers.json
-```
-Если json-файл лежит в интернете, то передайте адрес в параметре `-u`
-```shell
-python manage.py add_students -u https://raw.githubusercontent.com/valeriy131100/DvmnProjectsAutomation/main/json_examples/students.json
-```
-
+- Сами же обложки, тексты книг и json достает специальный скрипт, репозиторий с ним откроется в соседней вкладке, если нажать <a href="https://github.com/IlyaG96/parser_online_library" tagret="_blank">сюда</a>
 </details>
 
