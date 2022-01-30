@@ -10,7 +10,7 @@
 
 Клонируем репозиторий:
 ```bash
-git@github.com:IlyaG96/online_library.git```
+git@github.com:IlyaG96/online_library.git
 ```
 И незамедлительно создаем в этой папке виртуальное окружение:
 ```bash
