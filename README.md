@@ -41,6 +41,6 @@ pip install -r requirements.txt
 <summary>Да все просто, открывай скорее!</summary>
 
 - Сайт берет данные из онлайн-библиотеки [tululu.org](http://tululu.org/b9/)
-- Сами же обложки, тексты книг и json достает специальный скрипт, репозиторий с ним откроется в соседней вкладке, если нажать <a href="https://github.com/IlyaG96/parser_online_library" tagret="_blank">сюда</a>
+- Сами же обложки, тексты книг и json достает специальный скрипт, репозиторий с ним откроется в текущем окне, если нажать <a href="https://github.com/IlyaG96/parser_online_library">сюда</a>
 </details>
 
