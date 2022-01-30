@@ -21,7 +21,7 @@
             </li>
           {% else %}
             <li class="page-item">
-              <a class="page-link" href="/pages/index{{page_num | urlencode}}.html">{{page_num}}</a>
+              <a class="page-link " href="/pages/index{{page_num | urlencode}}.html">{{page_num}}</a>
             </li>
           {% endif %}
         {% endfor %}
@@ -86,7 +86,14 @@
               {% for genre in book.genres%}
                 <span class="badge badge-secondary">{{genre}}</span>
               {% endfor %}
-              <p><a href="/database/books/{{book.title | urlencode}}.txt" target="_blank" class="card-title">Читать</a></p>
+              <br>
+              <br>
+              <a href="/database/books/{{book.title | urlencode}}.txt"
+                 target="_blank"
+                 class="btn btn-success btn-sm active"
+                 role="button"
+                 aria-pressed="true">Читать!
+              </a>
             </div>
           </div>
         </div>
@@ -106,7 +113,14 @@
               {% for genre in book.genres%}
               <span class="badge badge-secondary">{{genre}}</span>
               {% endfor %}
-              <p><a href="/database/books/{{book.title | urlencode}}.txt" target="_blank" class="card-title">Читать</a></p>
+              <br>
+              <br>
+              <a href="/database/books/{{book.title | urlencode}}.txt"
+                 target="_blank"
+                 class="btn btn-success btn-sm active"
+                 role="button"
+                 aria-pressed="true">Читать!
+              </a>
             </div>
           </div>
         </div>
