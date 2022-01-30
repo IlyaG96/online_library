@@ -7,7 +7,7 @@ from pathlib import Path
 
 def render_index_pages():
 
-    with open(file='database/books.json',
+    with open(file='docs/database/books.json',
               mode='r') as file:
         books = json.load(file)
 
@@ -31,7 +31,7 @@ def render_index_pages():
                                         number_of_pages=len(book_pages),
                                         current_page=page_num+1
                                         )
-        with open(file=f'pages/index{page_num+1}.html',
+        with open(file=f'docs/pages/index{page_num+1}.html',
                   mode='w',
                   encoding='utf8') as file:
 
