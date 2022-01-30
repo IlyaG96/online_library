@@ -26,7 +26,8 @@ def render_index_pages():
         template = env.get_template('template.html')
         rendered_page = template.render(books_col1=list(books_col1),
                                         books_col2=list(books_col2),
-                                        number_of_pages=len(book_pages)
+                                        number_of_pages=len(book_pages),
+                                        current_page=page_num+1
                                         )
         with open(file=f'pages/index{page_num+1}.html', mode='w', encoding="utf8") as file:
             file.write(rendered_page)
