@@ -7,17 +7,19 @@ from pathlib import Path
 
 def render_index_pages():
 
-    with open(file='database/books.json', mode='r') as file:
+    with open(file='database/books.json',
+              mode='r') as file:
         books = json.load(file)
 
     book_pages = list(chunked(books, 10))
 
     env = Environment(
-        loader=FileSystemLoader('/Users/ilyagabdrakhmanov/PycharmProjects/online_library/templates'),
+        loader=FileSystemLoader('templates'),
         autoescape=select_autoescape(['html', 'xml'])
     )
 
-    Path('pages').mkdir(parents=True, exist_ok=True)
+    Path('pages').mkdir(parents=True,
+                        exist_ok=True)
 
     for page_num, page_content in enumerate(book_pages):
 
@@ -29,7 +31,10 @@ def render_index_pages():
                                         number_of_pages=len(book_pages),
                                         current_page=page_num+1
                                         )
-        with open(file=f'pages/index{page_num+1}.html', mode='w', encoding="utf8") as file:
+        with open(file=f'pages/index{page_num+1}.html',
+                  mode='w',
+                  encoding='utf8') as file:
+
             file.write(rendered_page)
 
     print('site reloaded')
