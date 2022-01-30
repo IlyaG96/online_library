@@ -78,11 +78,12 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="{{book.cover_link}}" class="card-img" alt="{{book.title}}" width="150">
+            <img src="/database/covers/{{book.cover_name| urlencode}} " class="card-img" alt="{{book.title}}" height="250">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">{{book.title}}</h5>
+              <p><h7 class="card-title">{{book.author}}</h7></p>
               {% for genre in book.genres%}
                 <span class="badge badge-secondary">{{genre}}</span>
               {% endfor %}
@@ -105,11 +106,12 @@
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row no-gutters">
           <div class="col-md-4">
-            <img src="{{book.cover_link}}" class="card-img" alt="{{book.title}}" width="150">
+            <img src="/database/covers/{{book.cover_name| urlencode}} " class="card-img" alt="{{book.title}}" height="250">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">{{book.title}}</h5>
+              <p><h7 class="card-title">{{book.author}}</h7></p>
               {% for genre in book.genres%}
               <span class="badge badge-secondary">{{genre}}</span>
               {% endfor %}
