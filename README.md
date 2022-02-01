@@ -1,7 +1,7 @@
 # Онлайн библиотека с фантастикой
 
 Учебный проект для курсов web-разработчиков [dvmn](https://dvmn.org).  
-Тестовый сайт можно посетитить, если нажать [сюда](https://ilyag96.github.io/online_library/pages/index1).
+Тестовый сайт можно посетитить, если нажать [сюда](https://ilyag96.github.io/online_library/online_library_example/pages/index1.html).
 
 <img src="https://dvmn.org/media/lessons/qz65h.png"  width=50% height=50%>
 
