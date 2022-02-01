@@ -94,5 +94,5 @@ site reloaded
 [I 220130 23:34:43 handlers:62] Start watching changes
 [I 220130 23:34:43 handlers:64] Start detecting changes
 ```
-То сайт работает [по этому адресу](http://127.0.0.1:5500)
+То сайт работает [по этому адресу]( http://127.0.0.1:5500/online_library_example/pages/index1.html)
 </details>
