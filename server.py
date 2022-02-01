@@ -10,8 +10,8 @@ def render_index_pages():
     with open(file='docs/database/books.json',
               mode='r') as file:
         books = json.load(file)
-
-    book_pages = list(chunked(books, 10))
+    books_on_page = 10
+    book_pages = list(chunked(books, books_on_page))
 
     env = Environment(
         loader=FileSystemLoader('templates'),
@@ -20,10 +20,10 @@ def render_index_pages():
 
     Path('pages').mkdir(parents=True,
                         exist_ok=True)
-
+    cols_number = 2
     for page_num, page_content in enumerate(book_pages):
 
-        books_col1, books_col2 = distribute(2, page_content)
+        books_col1, books_col2 = distribute(cols_number, page_content)
 
         template = env.get_template('template.html')
         rendered_page = template.render(books_col1=list(books_col1),
