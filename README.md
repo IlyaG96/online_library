@@ -1,7 +1,7 @@
 # Онлайн библиотека с фантастикой
 
 Учебный проект для курсов web-разработчиков [dvmn](https://dvmn.org).  
-Тестовый сайт можно посетитить, если нажать [сюда](https://ilyag96.github.io/online_library/online_library_example/pages/index1.html).
+Тестовый сайт можно посетить, если нажать [сюда](https://ilyag96.github.io/online_library/online_library_example/pages/index1.html).
 
 <img src="https://dvmn.org/media/lessons/qz65h.png"  width=50% height=50%>
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 - Скачай весь код (иначе не выйдет) [по этой ссылке](https://github.com/IlyaG96/online_library/archive/refs/heads/main.zip)
 - Разархивируй скачанный архив
-- Перейди в папку pages (online_library/pages)
+- Перейди в папку pages (online_library_example/pages)
 - Открой файл index1.html
 - Если что-то идет не так, попробуй открыть страничку, используя веб-браузер Chrome
 </details>
