@@ -18,7 +18,7 @@ def render_index_pages():
     )
 
     Path('online_library_example/pages').mkdir(parents=True,
-                                               exist_ok=True)
+                                                       exist_ok=True)
     cols_number = 2
     for page_num, page_content in enumerate(book_pages):
         books_col1, books_col2 = distribute(cols_number, page_content)
